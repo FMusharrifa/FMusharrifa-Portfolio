@@ -5,41 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Fathima Musaripa's developer portfolio – web development, software projects and technical skills.">
   <title>Fathima Musaripa | Developer Portfolio</title>
+
+  <!-- Favicon (inline SVG, no file needed) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%232463eb'/><text x='50' y='73' font-size='68' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>F</text></svg>">
+  <meta name="theme-color" content="#2463eb">
+
+  <!-- Social preview — update URLs after you publish -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fathima Musaripa | Developer Portfolio">
+  <meta property="og:description" content="HNDIT student building practical web experiences. Open to IT internship opportunities.">
+  <meta property="og:url" content="https://your-username.github.io/portfolio/">
+  <meta property="og:image" content="https://your-username.github.io/portfolio/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home"><span class="brand-mark">F</span> Fathima<span class="brand-dot">.</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">FM</span>FMusaripa <span class="brand-dot" aria-hidden="true">.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
       <div class="nav-links" id="navLinks">
         <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
-        <a href="#projects">Projects</a><a href="#education">Education</a><a class="nav-contact" href="#contact">Contact me <span>↗</span></a>
+        <a href="#projects">Projects</a><a href="#education">Education</a><a class="nav-contact" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero section" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="status-dot"></span> OPEN TO IT INTERNSHIP OPPORTUNITIES</div>
+          <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> OPEN TO IT INTERNSHIP OPPORTUNITIES</div>
           <p class="hello">Hello, I'm</p>
           <h1>Fathima<br><span>Musaripa.</span></h1>
           <h2>Aspiring Software Developer</h2>
-          <p class="hero-text">I build practical web experiences and enjoy turning ideas into useful digital solutions. I’m passionate about web development, software engineering and continuous learning.</p>
+          <p class="hero-text">I build practical web experiences and enjoy turning ideas into useful digital solutions. I'm passionate about web development, software engineering and continuous learning.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
             <a class="button button-outline" href="#contact">Get in touch</a>
           </div>
-          <div class="hero-meta"><span>Based in Sri Lanka</span><span class="meta-line"></span><span>HNDIT Student · SLIATE</span></div>
+          <div class="hero-meta"><span>Based in Sri Lanka</span><span class="meta-line" aria-hidden="true"></span><span>HNDIT Student · SLIATE</span></div>
         </div>
-        <div class="hero-art" aria-label="Decorative abstract blue shapes">
-          <div class="art-glow"></div><div class="art-card card-back"></div>
-          <div class="art-card card-front">
+
+        <div class="hero-art" role="img" aria-label="Decorative code editor illustration">
+          <div class="art-glow" aria-hidden="true"></div>
+          <div class="art-card card-back" aria-hidden="true"></div>
+          <div class="art-card card-front" aria-hidden="true">
             <div class="code-top"><i></i><i></i><i></i><span>developer.js</span></div>
             <div class="code-lines">
               <p><b>01</b> <span class="code-purple">const</span> <span class="code-blue">developer</span> = {</p>
@@ -52,23 +69,23 @@
             <div class="art-chip chip-one">HTML · CSS · JS</div>
             <div class="art-chip chip-two">MEAN Stack</div>
           </div>
-          <div class="floating-badge">✦ <span>Creative<br>problem solver</span></div>
-          <div class="hero-orbit"></div>
+          <div class="floating-badge" aria-hidden="true">✦ <span>Creative<br>problem solver</span></div>
+          <div class="hero-orbit" aria-hidden="true"></div>
         </div>
       </div>
-      <a class="scroll-cue" href="#about">SCROLL TO EXPLORE <span>↓</span></a>
+      <a class="scroll-cue" href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
     </section>
 
     <section class="section about-section" id="about">
       <div class="container">
         <div class="section-heading"><p class="section-kicker">01 / ABOUT ME</p><h2>A little about <span>my journey.</span></h2></div>
         <div class="about-grid">
-          <div class="about-lead"><span class="quote-mark">“</span><h3>Curious mind.<br>Practical builder.<br><span>Always learning.</span></h3></div>
+          <div class="about-lead"><span class="quote-mark" aria-hidden="true">"</span><h3>Curious mind.<br>Practical builder.<br><span>Always learning.</span></h3></div>
           <div class="about-copy">
             <p>I am currently pursuing a Higher National Diploma in Information Technology (HNDIT) at the Sri Lanka Institute of Advanced Technological Education (SLIATE).</p>
             <p>I have developed academic and practical projects using frontend and full-stack technologies. I enjoy learning how applications work, solving problems and creating user-friendly experiences.</p>
-            <p>I’m looking forward to gaining industry experience, learning from experienced developers and contributing to real-world software projects.</p>
-            <a class="text-link" href="#contact">Let’s connect <span>↗</span></a>
+            <p>I'm looking forward to gaining industry experience, learning from experienced developers and contributing to real-world software projects.</p>
+            <a class="text-link" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </div>
@@ -78,50 +95,145 @@
       <div class="container">
         <div class="section-heading"><p class="section-kicker">02 / WHAT I WORK WITH</p><h2>My technical <span>toolkit.</span></h2><p class="section-subtitle">Technologies and tools I have used in my learning and projects.</p></div>
         <div class="skills-grid">
-          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Frontend Development</h3><p>Building responsive and user-friendly interfaces.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Angular</span></div></article>
-          <article class="skill-card"><div class="skill-icon">⌁</div><h3>Backend Development</h3><p>Developing application logic and server-side features.</p><div class="tags"><span>Node.js</span><span>Express.js</span></div></article>
-          <article class="skill-card"><div class="skill-icon">▤</div><h3>Database Management</h3><p>Working with data storage and database concepts.</p><div class="tags"><span>MongoDB</span><span>SQL</span></div></article>
-          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Programming & Tools</h3><p>Practising programming and development workflows.</p><div class="tags"><span>Java</span><span>Python</span><span>Git</span><span>Postman</span></div></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">⌘</div><h3>Frontend Development</h3><p>Building responsive and user-friendly interfaces.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Angular</span></div></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">⌁</div><h3>Backend Development</h3><p>Developing application logic and server-side features.</p><div class="tags"><span>Node.js</span><span>Express.js</span></div></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">▤</div><h3>Database Management</h3><p>Working with data storage and database concepts.</p><div class="tags"><span>MongoDB</span><span>SQL</span></div></article>
+          <article class="skill-card"><div class="skill-icon" aria-hidden="true">⌘</div><h3>Programming & Tools</h3><p>Practising programming and development workflows.</p><div class="tags"><span>Java</span><span>Python</span><span>Git</span><span>Postman</span></div></article>
         </div>
       </div>
     </section>
 
     <section class="section projects-section" id="projects">
       <div class="container">
-        <div class="section-heading"><p class="section-kicker">03 / SELECTED WORK</p><h2>Projects I’m <span>proud of.</span></h2><p class="section-subtitle">A selection of projects that helped me apply my knowledge and develop my skills.</p></div>
+        <div class="section-heading"><p class="section-kicker">03 / SELECTED WORK</p><h2>Projects I'm <span>proud of.</span></h2><p class="section-subtitle">A selection of projects that helped me apply my knowledge and develop my skills.</p></div>
         <div class="projects-grid">
+
+         <!-- PROJECT 1 — Tourism Website -->
+<article class="project-card">
+  <div class="project-visual tourism-visual">
+    <div class="browser-bar"><i></i><i></i><i></i><span>explore-sri-lanka</span></div>
+    <div class="tourism-scene">
+      <div class="sun"></div>
+      <div class="mountain mountain-one"></div>
+      <div class="mountain mountain-two"></div>
+      <div class="scene-label">DISCOVER · EXPLORE · EXPERIENCE</div>
+    </div>
+    <div class="visual-caption">Explore beautiful destinations</div>
+  </div>
+  <div class="project-content">
+    <div class="project-topline">
+      <span class="project-type">WEBSITE</span>
+      <span class="project-number">01</span>
+    </div>
+    <h3>Tourism Website</h3>
+    <p>A tourism website designed to showcase travel destinations and provide visitors with useful information about tourist attractions.</p>
+    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+    <div class="project-links">
+      <a class="project-link project-link-live" href="https://fmusharrifa.github.io/Tourism-Website/" target="_blank" rel="noopener">
+        <span aria-hidden="true">↗</span> Live Demo
+      </a>
+      <a class="project-link" href="https://github.com/FMusharrifa/Tourism-Website" target="_blank" rel="noopener">
+        <span aria-hidden="true">⌘</span> View Code
+      </a>
+    </div>
+  </div>
+</article>
+
+          <!-- PROJECT 2 — DailyFlow -->
           <article class="project-card">
-            <div class="project-visual tourism-visual"><div class="browser-bar"><i></i><i></i><i></i><span>explore-sri-lanka</span></div><div class="tourism-scene"><div class="sun"></div><div class="mountain mountain-one"></div><div class="mountain mountain-two"></div><div class="scene-label">DISCOVER · EXPLORE · EXPERIENCE</div></div><div class="visual-caption">Explore beautiful destinations</div></div>
-            <div class="project-content"><div class="project-topline"><span class="project-type">UNIVERSITY PROJECT</span><span class="project-number">01</span></div><h3>Tourism Website</h3><p>A tourism website designed to showcase travel destinations and provide visitors with useful information about tourist attractions.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><span class="project-note">Academic web development project</span></div></div>
+            <div class="project-visual daily-visual">
+              <div class="dash-window">
+                <div class="dash-sidebar"><b>D.</b><span></span><span></span><span></span><span></span></div>
+                <div class="dash-main">
+                  <div class="dash-greeting">Good day! <b>✦</b></div>
+                  <div class="dash-sub">Make today count.</div>
+                  <div class="dash-stats">
+                    <div><small>TASKS</small><strong>24</strong></div>
+                    <div><small>DONE</small><strong>15</strong></div>
+                    <div><small>STREAK</small><strong>07</strong></div>
+                  </div>
+                  <div class="dash-task-title">Today's tasks</div>
+                  <div class="dash-task"><i>✓</i><span>Review project work</span></div>
+                  <div class="dash-task"><i></i><span>Study new technologies</span></div>
+                  <div class="dash-task"><i></i><span>Plan tomorrow</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <span class="project-type">WEB APPLICATION</span>
+                <span class="project-number">02</span>
+              </div>
+              <h3>DailyFlow – Task Management</h3>
+              <p>A task management web application that helps users organise daily activities, manage tasks, track progress and set reminders.</p>
+              <div class="tags"><span>MongoDB</span><span>Express.js</span><span>Angular</span><span>Node.js</span></div>
+              <div class="project-links">
+                <!-- <a class="project-link project-link-live" href="https://YOUR-DAILYFLOW-DEMO-LINK" target="_blank" rel="noopener">
+                  <span aria-hidden="true">↗</span> Live Demo
+                </a>
+                <a class="project-link" href="https://github.com/FMusharrifa/YOUR-DAILYFLOW-REPO" target="_blank" rel="noopener">
+                  <span aria-hidden="true">⌘</span> View Code
+                </a> -->
+              </div>
+            </div>
           </article>
-          <article class="project-card">
-            <div class="project-visual daily-visual"><div class="dash-window"><div class="dash-sidebar"><b>D.</b><span></span><span></span><span></span><span></span></div><div class="dash-main"><div class="dash-greeting">Good day! <b>✦</b></div><div class="dash-sub">Make today count.</div><div class="dash-stats"><div><small>TASKS</small><strong>24</strong></div><div><small>DONE</small><strong>15</strong></div><div><small>STREAK</small><strong>07</strong></div></div><div class="dash-task-title">Today's tasks</div><div class="dash-task"><i>✓</i><span>Review project work</span></div><div class="dash-task"><i></i><span>Study new technologies</span></div><div class="dash-task"><i></i><span>Plan tomorrow</span></div></div></div></div>
-            <div class="project-content"><div class="project-topline"><span class="project-type">WEB APPLICATION</span><span class="project-number">02</span></div><h3>DailyFlow – Task Management</h3><p>A task management web application that helps users organise daily activities, manage tasks, track progress and set reminders.</p><div class="tags"><span>MongoDB</span><span>Express.js</span><span>Angular</span><span>Node.js</span></div><div class="project-links"><span class="project-note">MEAN Stack project</span></div></div>
-          </article>
+
         </div>
-        <p class="project-footnote">Project screenshots and live repository links can be added here when available.</p>
       </div>
     </section>
 
     <section class="section education-section" id="education">
       <div class="container">
         <div class="section-heading"><p class="section-kicker">04 / EDUCATION</p><h2>Learning is a <span>journey.</span></h2></div>
-        <div class="education-card"><div class="edu-icon">✦</div><div><p class="edu-label">HIGHER NATIONAL DIPLOMA</p><h3>Higher National Diploma in Information Technology (HNDIT)</h3><p class="edu-place">Sri Lanka Institute of Advanced Technological Education (SLIATE)</p><p class="edu-note">Currently pursuing · Advanced Technological Institute (ATI), Gampaha</p></div><span class="edu-status">IN PROGRESS</span></div>
+        <div class="education-card">
+          <div class="edu-icon" aria-hidden="true">✦</div>
+          <div>
+            <p class="edu-label">HIGHER NATIONAL DIPLOMA</p>
+            <h3>Higher National Diploma in Information Technology (HNDIT)</h3>
+            <p class="edu-place">Sri Lanka Institute of Advanced Technological Education (SLIATE)</p>
+            <p class="edu-note">Currently pursuing · Advanced Technological Institute (ATI), Gampaha</p>
+          </div>
+          <span class="edu-status">IN PROGRESS</span>
+        </div>
       </div>
     </section>
 
     <section class="contact-section section" id="contact">
       <div class="container contact-grid">
-        <div><p class="section-kicker">05 / GET IN TOUCH</p><h2>Have an opportunity?<br><span>Let’s talk.</span></h2><p class="contact-intro">I’m interested in IT internship opportunities and connecting with people in the technology field. Feel free to reach out.</p></div>
-        <div class="contact-panel"><p class="contact-label">CONTACT DETAILS</p>
-          <a class="contact-item" href="mailto:musharrifafathima051@gmail.com"><span class="contact-symbol">✉</span><span><small>EMAIL</small><b>musharrifafathima051@gmail.com</b></span><span class="arrow">↗</span></a>
-          <a class="contact-item" href="https://www.linkedin.com/in/fathima-musharrifa-b57389421" target="_blank" rel="noopener"><span class="contact-symbol">in</span><span><small>LINKEDIN</small><b>Visit my LinkedIn profile</b></span><span class="arrow">↗</span></a>
-          <a class="contact-item" href="https://github.com/FMusharrifa" target="_blank" rel="noopener"><span class="contact-symbol">⌘</span><span><small>GITHUB</small><b>Visit my GitHub profile</b></span><span class="arrow">↗</span></a>
+        <div>
+          <p class="section-kicker">05 / GET IN TOUCH</p>
+          <h2>Have an opportunity?<br><span>Let's talk.</span></h2>
+          <p class="contact-intro">I'm interested in IT internship opportunities and connecting with people in the technology field. Feel free to reach out.</p>
+        </div>
+        <div class="contact-panel">
+          <p class="contact-label">CONTACT DETAILS</p>
+          <a class="contact-item" href="mailto:musharrifafathima051@gmail.com">
+            <span class="contact-symbol" aria-hidden="true">✉</span>
+            <span><small>EMAIL</small><b>musharrifafathima051@gmail.com</b></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/fathima-musharrifa-b57389421" target="_blank" rel="noopener">
+            <span class="contact-symbol" aria-hidden="true">in</span>
+            <span><small>LINKEDIN</small><b>Visit my LinkedIn profile</b></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-item" href="https://github.com/FMusharrifa" target="_blank" rel="noopener">
+            <span class="contact-symbol" aria-hidden="true">⌘</span>
+            <span><small>GITHUB</small><b>Visit my GitHub profile</b></span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">F</span> Fathima<span class="brand-dot">.</span></a><p>Designed & built with care by Fathima Musaripa.</p><a href="#home" class="back-top">BACK TO TOP ↑</a></div></footer>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">FM</span> FMusaripa<span class="brand-dot" aria-hidden="true">.</span></a>
+      <p>Designed &amp; built with care by Fathima Musaripa.</p>
+      <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
